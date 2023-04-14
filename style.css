@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    /* z-index: 0; */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+} 
+
+/* atur kanan kiri keseluruhan container */
+.container {
+    width: auto;
+    margin: 0;
+    position: relative;
+} 
+
+/* ================================ Navbar ========================== */
+.navbar {
+    width: 1280px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px 16px 0px 16px;
+    float: left;
+    outline: none;
+    text-decoration: none;
+    font-family: courier;
+    color: #252A34;
+    
+}
+
+.menu {
+    float:right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #8ace98;
+    z-index: 1;
+    border-bottom: 1px solid #252A34;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.selected, a.selected:active {
+    text-decoration: underline;
+}
+
+/* ========================== Section ========================= */
+/* ============= Section 1 ============= */
+#section-1{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 50px 0px 50px;
+    background-color: #eceef1;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+#section-1 > img{
+    /* max-width: 30%; */
+    /* max-height: 50%; */
+    height:300px;
+    width: 300px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.kolom {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #011439;
+    width: 100%;
+    line-height: 40px;
+}
+
+.paragrap-1 {
+    margin: 50px 0px 10px 0px;
+}
+
+#description {
+    padding: 10px 100px 10px 0px;
+    font-size: 20px;
+    font-family: 'comic sans ms';
+}
+
+
+/* ============== section 2 ================= */
+#section-2{
+    /* padding: 200px; */
+    margin-top: 20px;
+    height: fit-content;
+    padding: 0px 50px 0px 50px;
+    background-color: rgb(255, 255, 255);
+}
+#paragrap-2-2 {
+    /* mar */
+    text-align: center;
+}
+.button_wrap{
+    width: fit-content;
+    margin: auto;
+}
+button{
+    width: 350px;
+    padding: 10px;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.card{
+    margin: 15px;
+    border: 1px solid black;
+    max-width: 400px;
+    height: fit-content;
+}
+.card .card-header {
+    width: 400px;
+    height: 200px;
+}
+.card .card-header > img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.card .card-body{
+    padding: 10px;
+}
+.card .card-body .card-date{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .card-body .card-title{
+    margin-bottom: 20px;
+}
+.card .card-body .card-desc{
+    margin-bottom: 30px;
+}
+
+/* semua tag button */
+button {
+    background-color: #116715;
+}
+#link{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ================== Form ================ */
+#section-3{
+    /* padding: 200px; */
+    margin-top: 20px;
+    height: fit-content;
+    padding: 0px 50px 0px 50px;
+    background-color: #eceef1;
+}
+h3{
+    text-align: center;
+    /* margin-top: 50px; */
+    padding: 20px;
+}
+
+/* button */
+#submit-form{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display:grid;
+    position:relative;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* style fomr */
+form{
+    /* margin:10px auto; */
+	/* max-width: 700px; */
+	padding: 10px 12px;
+    display: grid;
+    /* align-items: center; */
+}
+#name #city #email #zip-code{
+    padding: 0;
+	display: block;
+	list-style: none;
+	/* margin: 10px 0 0 0; */
+}
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+label{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* =================== footer ================== */
+footer{
+    max-width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* position: absolute; */
+    bottom: -140px;
+    left: 0;
+    right: 0;
+    background: #a69c9c;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+}
+h4 {
+    font-family: 'comic sans ms';
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #252A34;
+    width: 100%;
+}
+
+
+/* Responsive */
+@media screen and (max-width:1024px){
+    .container {
+        width: 100%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+}
+@media screen and (max-width:1180px){
+    footer{
+     bottom: -270px;
+    }
+ }
